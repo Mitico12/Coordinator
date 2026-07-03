@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+
+  /* Custom White and Dark Blue overrides for light mode */
+  --color-amber-50: #f8fafc;
+  --color-amber-100: #f1f5f9;
+  --color-amber-200: #e2e8f0;
+  --color-amber-300: #cbd5e1;
+  --color-amber-400: #3b82f6;
+  --color-amber-500: #1d4ed8;
+  --color-amber-600: #1e40af;
+  --color-amber-700: #1e3a8a;
+  --color-amber-800: #172554;
+  --color-amber-900: #0f172a;
+  --color-amber-950: #0b0f19;
+
+  /* Custom Dark Navy/Slate overrides for dark mode */
+  --color-neutral-950: #0e1320;
+  --color-neutral-900: #171e30;
+  --color-neutral-850: #202b43;
+  --color-neutral-800: #25324e;
+  --color-neutral-750: #313f5f;
+  --color-neutral-700: #3b4b72;
+  --color-neutral-600: #4a5c88;
+  --color-neutral-500: #64748b;
+  --color-neutral-450: #94a3b8;
+  --color-neutral-400: #94a3b8;
+}
+
+/* Custom gorgeous scrollbar styled for web and mobile */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(155, 92, 255, 0.2);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(155, 92, 255, 0.4);
+}
+
+/* Safe Area Support */
+.safe-padding-top {
+  padding-top: max(1rem, env(safe-area-inset-top));
+}
+.safe-padding-bottom {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
