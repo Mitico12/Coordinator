@@ -1,0 +1,6 @@
+{
+  "name": "Hotel Dispatcher",
+  "description": "Advanced hotel dispatcher and driver scheduling portal featuring double-booking warnings, vehicle capacity alerts, and personal route timelines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
